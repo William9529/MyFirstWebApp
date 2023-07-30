@@ -1,0 +1,138 @@
+
+.container {
+    width: 1200px;
+    margin: 20px auto auto auto;
+}
+
+.viewer {
+    display: flex;
+    box-shadow: 0px 7px 33px -4px rgba(0, 0, 0, 0.75);
+}
+
+.viewer button {
+    width: 100px;
+    height: 100%;
+}
+
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+#back img {
+    transform: rotate(180deg);
+}
+
+#main-photo-container {
+    background-color: black;
+    width: 1000px;
+    height: 670px;
+    display: flex;
+    position: relative;
+}
+
+#main-photo-container img {
+    max-height: 670px;
+    width: 100%;
+    margin: auto;
+}
+
+#main-photo-text-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 170px;
+    width: 940px;
+    padding: 0 30px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 5;
+}
+
+#main-photo-title {
+    font-size: 1.4rem;
+    opacity: 1;
+    padding: 0;
+    margin: 5px 0;
+}
+
+#main-photo-description {
+    font-size: 1.3rem;
+    opacity: 0.6;
+    padding-top: 0;
+    margin-top: 5px;
+}
+
+#back:hover {
+    box-shadow: 0px 3px 12px rgn(119, 119, 119);
+    cursor: pointer;
+}
+
+#forward:hover {
+    box-shadow: 0px 3px 47px 12px rgb(119, 119, 119);
+    cursor: pointer;
+}
+
+#thumbnails-container {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.thumbnail {
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0px 9px 15px -3px rgba(0, 0, 0, 1);
+    height: 70px;
+    padding: 4px;
+    margin: 4px;
+    position: relative;
+    transition: all ease 300ms;
+}
+
+.thumbnail:hover {
+    box-shadow: 0px 25px 20px -3px rgba(0, 0, 0, 0.75);
+    transform: scale(1.3) translate(0, -25%);
+    z-index: 6;
+    cursor: pointer;
+}
+
+.thumbnail-img {
+    height: 100%;
+}
+
+.selected {
+    box-shadow: 0px 13px 20px -3px rgba(0, 0, 0, 0.75);
+    transform: scale(1.2) translate(0, -15%);
+    z-index: 5;
+}
+
+.thumbnail-title {
+    background-color: black;
+    border-radius: 3px;
+    position: absolute;
+    width: 150%;
+    visibility: hidden;
+    height: 30px;
+    top: -40px;
+    left: -25%;
+    box-shadow: 0px 13px 20px -3px rgba(0, 0, 0, 0.75);
+    z-index: 5;
+}
+
+.thumbnail-title h6 {
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: -18px;
+    text-align: center;
+}
+
+.thumbnail:hover .thumbnail-title {
+    visibility: visible;
+}
+
+h1 {
+    text-align: center;
+}
